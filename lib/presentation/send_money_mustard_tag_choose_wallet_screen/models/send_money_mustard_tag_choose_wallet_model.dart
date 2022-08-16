@@ -1,0 +1,7 @@
+import 'package:get/get.dart';import 'listrecipientandn1_item_model.dart';import 'package:mustard_ng/data/models/selectionPopupModel/selection_popup_model.dart';class SendMoneyMustardTagChooseWalletModel {RxList<Listrecipientandn1ItemModel> listrecipientandn1ItemList = RxList.filled(4,Listrecipientandn1ItemModel());
+
+RxList<SelectionPopupModel> dropdownItemList = [SelectionPopupModel(id:1,title:"test",isSelected:true,),SelectionPopupModel(id:2,title:"test1",),SelectionPopupModel(id:3,title:"test2",)].obs;
+
+List<String> radioList = ["msg_dollar_wallet", "msg_naira_wallet_n1"];
+
+ }

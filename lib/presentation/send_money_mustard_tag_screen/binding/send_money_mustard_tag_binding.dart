@@ -1,0 +1,9 @@
+import '../controller/send_money_mustard_tag_controller.dart';
+import 'package:get/get.dart';
+
+class SendMoneyMustardTagBinding extends Bindings {
+  @override
+  void dependencies() {
+    Get.lazyPut(() => SendMoneyMustardTagController());
+  }
+}

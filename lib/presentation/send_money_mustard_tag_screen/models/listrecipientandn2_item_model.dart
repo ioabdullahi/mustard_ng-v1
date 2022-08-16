@@ -1,0 +1,1 @@
+class Listrecipientandn2ItemModel { }

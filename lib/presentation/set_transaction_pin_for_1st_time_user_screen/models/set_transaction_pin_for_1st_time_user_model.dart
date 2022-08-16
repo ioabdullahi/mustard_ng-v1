@@ -1,0 +1,1 @@
+class SetTransactionPinFor1stTimeUserModel { }

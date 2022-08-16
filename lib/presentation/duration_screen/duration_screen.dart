@@ -1,0 +1,270 @@
+import 'controller/duration_controller.dart';
+import 'package:flutter/material.dart';
+import 'package:mustard_ng/core/app_export.dart';
+import 'package:mustard_ng/widgets/custom_button.dart';
+import 'package:outline_gradient_button/outline_gradient_button.dart';
+
+class DurationScreen extends GetWidget<DurationController> {
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: ColorConstant.whiteA700,
+        body: Container(
+          width: size.width,
+          child: SingleChildScrollView(
+            child: Container(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: getPadding(
+                      left: 29,
+                      top: 25,
+                      right: 29,
+                    ),
+                    child: Text(
+                      "lbl_from_this_date".tr,
+                      overflow: TextOverflow.ellipsis,
+                      textAlign: TextAlign.left,
+                      style: AppStyle.txtLatoRegular14.copyWith(
+                        height: 1.00,
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.center,
+                    child: Container(
+                      margin: getMargin(
+                        left: 29,
+                        top: 15,
+                        right: 28,
+                      ),
+                      decoration: AppDecoration.outline12.copyWith(
+                        borderRadius: BorderRadiusStyle.roundedBorder3,
+                      ),
+                      child: OutlineGradientButton(
+                        padding: EdgeInsets.only(
+                          left: getHorizontalSize(
+                            0.20,
+                          ),
+                          top: getVerticalSize(
+                            0.20,
+                          ),
+                          right: getHorizontalSize(
+                            0.20,
+                          ),
+                          bottom: getVerticalSize(
+                            0.20,
+                          ),
+                        ),
+                        strokeWidth: getHorizontalSize(
+                          0.20,
+                        ),
+                        gradient: LinearGradient(
+                          begin: Alignment(
+                            0.7186544980768363,
+                            2.1956131579514704e-8,
+                          ),
+                          end: Alignment(
+                            0.09933777429649049,
+                            1.029729712418986,
+                          ),
+                          colors: [
+                            ColorConstant.indigo200,
+                            ColorConstant.teal400,
+                          ],
+                        ),
+                        corners: Corners(
+                          topLeft: Radius.circular(
+                            2,
+                          ),
+                          topRight: Radius.circular(
+                            2,
+                          ),
+                          bottomLeft: Radius.circular(
+                            2,
+                          ),
+                          bottomRight: Radius.circular(
+                            2,
+                          ),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Padding(
+                              padding: getPadding(
+                                left: 8,
+                                top: 20,
+                                bottom: 19,
+                              ),
+                              child: Text(
+                                "lbl_02_2021".tr,
+                                overflow: TextOverflow.ellipsis,
+                                textAlign: TextAlign.left,
+                                style: AppStyle.txtLatoRegular14.copyWith(
+                                  height: 1.00,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: getPadding(
+                                top: 18,
+                                right: 2,
+                                bottom: 17,
+                              ),
+                              child: CommonImageView(
+                                svgPath: ImageConstant.imgCalendar18X18,
+                                height: getSize(
+                                  18.00,
+                                ),
+                                width: getSize(
+                                  18.00,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: getPadding(
+                      left: 29,
+                      top: 15,
+                      right: 29,
+                    ),
+                    child: Text(
+                      "lbl_to_this_date".tr,
+                      overflow: TextOverflow.ellipsis,
+                      textAlign: TextAlign.left,
+                      style: AppStyle.txtLatoRegular14.copyWith(
+                        height: 1.00,
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.center,
+                    child: Container(
+                      margin: getMargin(
+                        left: 29,
+                        top: 15,
+                        right: 28,
+                      ),
+                      decoration: AppDecoration.outline12.copyWith(
+                        borderRadius: BorderRadiusStyle.roundedBorder3,
+                      ),
+                      child: OutlineGradientButton(
+                        padding: EdgeInsets.only(
+                          left: getHorizontalSize(
+                            0.20,
+                          ),
+                          top: getVerticalSize(
+                            0.20,
+                          ),
+                          right: getHorizontalSize(
+                            0.20,
+                          ),
+                          bottom: getVerticalSize(
+                            0.20,
+                          ),
+                        ),
+                        strokeWidth: getHorizontalSize(
+                          0.20,
+                        ),
+                        gradient: LinearGradient(
+                          begin: Alignment(
+                            0.7186544980768363,
+                            2.1956131579514704e-8,
+                          ),
+                          end: Alignment(
+                            0.09933777429649049,
+                            1.029729712418986,
+                          ),
+                          colors: [
+                            ColorConstant.indigo200,
+                            ColorConstant.teal400,
+                          ],
+                        ),
+                        corners: Corners(
+                          topLeft: Radius.circular(
+                            2,
+                          ),
+                          topRight: Radius.circular(
+                            2,
+                          ),
+                          bottomLeft: Radius.circular(
+                            2,
+                          ),
+                          bottomRight: Radius.circular(
+                            2,
+                          ),
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Padding(
+                              padding: getPadding(
+                                left: 8,
+                                top: 21,
+                                bottom: 18,
+                              ),
+                              child: Text(
+                                "lbl_03_2022".tr,
+                                overflow: TextOverflow.ellipsis,
+                                textAlign: TextAlign.left,
+                                style: AppStyle.txtLatoRegular14.copyWith(
+                                  height: 1.00,
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: getPadding(
+                                top: 19,
+                                right: 1,
+                                bottom: 16,
+                              ),
+                              child: CommonImageView(
+                                svgPath: ImageConstant.imgCalendar18X18,
+                                height: getSize(
+                                  18.00,
+                                ),
+                                width: getSize(
+                                  18.00,
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  CustomButton(
+                    width: 270,
+                    text: "lbl_proceed".tr,
+                    margin: getMargin(
+                      left: 29,
+                      top: 16,
+                      right: 28,
+                      bottom: 20,
+                    ),
+                    shape: ButtonShape.RoundedBorder2,
+                    padding: ButtonPadding.PaddingAll19,
+                    fontStyle: ButtonFontStyle.DMSansMedium14,
+                    alignment: Alignment.center,
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}

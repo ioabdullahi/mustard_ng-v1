@@ -1,0 +1,1 @@
+class Listfrequency4ItemModel { }
